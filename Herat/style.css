@@ -2,19 +2,60 @@
     text-align:center;
 }
 .intro{
-    height:60vh;
-    background-image: url();
-    justify-content:center;
-    align-items: center;
+    height:300px;
+    background-image: url(images/foods.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    object-fit: cover;
+    
+    
 }
 .food-container{
-    display:flex;
+    justify-content: center;   
+     display:flex;
     flex-wrap:wrap;
-    gap:20px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .food-card{
-    width: calc(50% - 10px);
+    text-align: center;
     border: 1px solid #ccc;
-    padding: 16px;
+    padding: 20px;
+    border-radius: 12px;
+    overflow: hidden;background: #fff;
+    flex: 0 0 48%;
+    box-sizing: border-box;
+
+}
+.reciepe{
+    background-color: rgb(76, 76, 206);
+    color: white;
+    border: none;
+    margin-top: 8px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.food-card img{
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
+    display: block;
+
+}
+.navbar{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
