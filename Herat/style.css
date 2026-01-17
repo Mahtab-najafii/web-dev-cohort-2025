@@ -2,49 +2,79 @@
     text-align:center;
 }
 .intro{
-    height:300px;
-    background-image: url(images/foods.jpg);
+    background-image: url(images/Food.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: block;
     object-fit: cover;
-    
-    
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro-content{
+    background: rgb(0 4 , 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+.intro-content h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.intro-content btn{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight:bold;
+}
+.intro-btn:hover{
+    background: #a93226;
 }
 .food-container{
-    justify-content: center;   
-     display:flex;
-    flex-wrap:wrap;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
+    max-width: 1000px;
 }
 .food-card{
     text-align: center;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 12px;
-    overflow: hidden;background: #fff;
+    overflow: hidden;
+    background: #fff;
     flex: 0 0 48%;
     box-sizing: border-box;
 
 }
 .reciepe{
-    background-color: rgb(76, 76, 206);
+    background-color: #1F6AE1;
     color: white;
     border: none;
     margin-top: 8px;
     padding: 10px 20px;
     border-radius: 15px;
     font-size: 12px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.reciepe:active{
+    background-color: rgb( 56, 56, 126);
 }
 .food-card img{
-    height: 200px;
+    height: 250px;
+    width: 100%;
     object-fit: cover;
     border-radius: 8px;
     display: block;
-
 }
 .navbar{
     display:flex;
@@ -58,4 +88,15 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+.description{
+    font-size: 20px;
 }
