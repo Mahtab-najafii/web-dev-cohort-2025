@@ -10,7 +10,11 @@ body{
     text-align:center;
 }
 .intro{
+<<<<<<< HEAD
     background-image: url(images/foods2.jpg);
+=======
+    background-image: url(images/Food.jpg);
+>>>>>>> 4af9018d6b8d5a4d1271c698ababa21b5ab6eb7c
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
