@@ -4,13 +4,14 @@
     box-sizing:border-box;
 }
 body{
-    font-family: Arial, sans-serif;
+    font-family: Segoe UI, sans-serif;
 }
 .food-header{
     text-align:center;
 }
 .intro{
-    background-image: url(images/foods2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+    url(images/foods2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,32 +30,31 @@ body{
     margin-bottom:10px
 }
 .intro p{
-margin-bottom: 15px;
+margin-bottom: 25px;
+font-size:1.1rem;
 }
 .intro a{
     margin-top: 20px;
     text-decoration:none;
-    color:#FFFFFF;
+    color:white;
     padding: 12px 24px;
     border-radius: 6px;
     font-weight: bold;
-    background-color:#FF6B5A;
+    background-color: #f75240;
 }
 
 .intro a:hover{
-    background: #df5f54;
+    background: #fc685b;
 }
 .food-container{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    max-width: 1000px;
+    margin-left: 10px;
+    margin-right:10px;
 }
 .food-card{
-    margin-top: 20px;
+    margin-top:20px;
     text-align: center;
     border: 1px solid #ccc;
     padding: 20px;
@@ -63,6 +63,7 @@ margin-bottom: 15px;
     background: #fff;
     flex: 0 0 48%;
     box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
 
 }
 .reciepe{
@@ -70,7 +71,7 @@ margin-bottom: 15px;
     color: white;
     border: none;
     margin-top: 8px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 15px;
     font-size: 12px;
     transition: background-color 1s;
@@ -80,21 +81,30 @@ margin-bottom: 15px;
     background-color: rgb( 56, 56, 126);
 }
 .food-card img{
-    height: 250px;
+    height:250px;
     width: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    display: block;
+    border-radius:15px;
+    display:block;
 }
-.navbar{
-    background-color:#FF6B5A;
+.navbar {
+    background-color: #FF6B5A;
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
 }
+.brand{
+    color:white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color:#ffffff;
+    letter-spacing:1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .nav-links{
     display: flex;
+    flex:wrap;
     gap: 20px;
     list-style: none;
     margin: 0;
@@ -103,17 +113,21 @@ margin-bottom: 15px;
 .nav-links a{
     text-decoration: none;
     font-size: 18px;
-    color:white
+    color:white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
+
 .nav-links a:hover{
     text-decoration: underline;
 }
 .description{
     font-size: 20px;
     margin-bottom: 20px;
+    padding: 10px;
 }
 footer{
-    background-color: #FF6B5A;
+    background-color:#f75442;
 }
 .footerContainer{
     width:100%;
@@ -132,11 +146,11 @@ footer{
 }
 .socialIcons a i{
     font-size:2em;
-    color:#FF6B5A;
+    color:#f75442;
     opacity: 0.9;
 }
 .socialIcons a:hover {
-    background-color:#FF6B5A;;
+    background-color:#f75442;
     transition: 0.5s;
 }
 .socialIcons a:hover i{
@@ -149,20 +163,34 @@ footer{
 .footerNav{
     margin:30px 0;
 }
-.footerNav ul{
+.footerNav ul {
 display:flex;
 justify-content:center;
 list-style-type: none;
 }
-.footerNav ul li a{
+.footerNav ul li a {
     color:white;
     margin: 20px;
     text-decoration: none;
     font-size:1.3em;
     opacity: 0.7;
     transition: 0.5s;
+
 }
 .footerNav ul li a:hover{
     opacity:1;
 
+}
+#description{
+    margin-left: 10px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction:column;
+    }
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin:10px;
+    }
 }
